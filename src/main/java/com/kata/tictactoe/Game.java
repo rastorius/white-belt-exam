@@ -20,12 +20,23 @@ public class Game {
         if (winner == Mark.EMPTY) {
             winner = checkVerticalWin3();
         }
+        if (winner == Mark.EMPTY) {
+            winner = checkHorizontalWin1();
+        }
 
         if (winner == Mark.X) {
             status = Status.X_WON;
         }
         if (winner == Mark.O) {
             status = Status.O_WON;
+        }
+    }
+
+    private Mark checkHorizontalWin1() {
+        if (board[0] == board[1] && board[1] == board[2]) {
+            return board[0];
+        } else {
+            return Mark.EMPTY;
         }
     }
 
