@@ -17,6 +17,9 @@ public class Game {
         if (winner == Mark.EMPTY) {
             winner = checkVerticalWin2();
         }
+        if (winner == Mark.EMPTY) {
+            winner = checkVerticalWin3();
+        }
 
         if (winner == Mark.X) {
             status = Status.X_WON;
@@ -37,6 +40,14 @@ public class Game {
     private Mark checkVerticalWin2() {
         if (board[1] == board[4] && board[4] == board[7]) {
             return board[1];
+        } else {
+            return Mark.EMPTY;
+        }
+    }
+
+    private Mark checkVerticalWin3() {
+        if (board[2] == board[5] && board[5] == board[8]) {
+            return board[2];
         } else {
             return Mark.EMPTY;
         }
