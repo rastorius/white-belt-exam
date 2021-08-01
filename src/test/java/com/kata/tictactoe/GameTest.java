@@ -25,12 +25,13 @@ class GameTest {
     void givenNewGame_whenPlaceMarkX_thenStatusShouldBeONext() {
         // given
         Game game = new Game();
+        Status expectedStatus = Status.O_NEXT;
 
         // when
         game.placeMark(0);
 
         // then
-        assertThat(game.getStatus()).isEqualTo(Status.O_NEXT);
+        assertThat(game.getStatus()).isEqualTo(expectedStatus);
     }
 
     @Test
@@ -39,11 +40,12 @@ class GameTest {
         // given
         Game game = new Game();
         game.placeMark(0);
+        Status expectedStatus = Status.X_NEXT;
 
         // when
         game.placeMark(1);
 
         // then
-        assertThat(game.getStatus()).isEqualTo(Status.X_NEXT);
+        assertThat(game.getStatus()).isEqualTo(expectedStatus);
     }
 }
