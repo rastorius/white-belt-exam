@@ -18,7 +18,9 @@ public class Game {
         if (winner == Mark.X) {
             status = Status.X_WON;
         }
-
+        if (winner == Mark.O) {
+            status = Status.O_WON;
+        }
     }
 
     private Mark checkVerticalWin1() {
