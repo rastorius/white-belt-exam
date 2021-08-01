@@ -19,7 +19,7 @@
 * :D - Win #6 Horizontal 3
 * :D - Win #7 Diagonal 1
 * :D - Win #8 Diagonal 2
-* :( - Draw - If the board is full and there is no winner then it is a draw
+* :| - Draw - If the board is full and there is no winner then it is a draw
 
 # Planned for Pomodoro #3 Remaining
 * :( - Mark placement should be random

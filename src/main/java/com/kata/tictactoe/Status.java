@@ -1,5 +1,5 @@
 package com.kata.tictactoe;
 
 public enum Status {
-    X_NEXT, O_NEXT, X_WON, O_WON
+    X_NEXT, O_NEXT, X_WON, O_WON, DRAW
 }

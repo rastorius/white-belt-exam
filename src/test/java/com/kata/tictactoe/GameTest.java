@@ -229,4 +229,28 @@ class GameTest {
         // then
         assertThat(status).isEqualTo(expectedStatus);
     }
+
+    @Test
+    @DisplayName("Draw - If the board is full and there is no winner then it is a draw")
+    void givenBoardIsFullAndNoWinner_whenGetStatus_thenStatusShouldBeDraw() {
+        // given
+        Game game = new Game();
+        game.placeMark(0);
+        game.placeMark(1);
+        game.placeMark(2);
+        game.placeMark(3);
+        game.placeMark(5);
+        game.placeMark(4);
+        game.placeMark(6);
+        game.placeMark(8);
+        game.placeMark(7);
+
+        Status expectedStatus = Status.DRAW;
+
+        // when
+        Status status = game.getStatus();
+
+        // then
+        assertThat(status).isEqualTo(expectedStatus);
+    }
 }
