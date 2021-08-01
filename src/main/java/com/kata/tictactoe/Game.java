@@ -32,6 +32,9 @@ public class Game {
         if (winner == Mark.EMPTY) {
             winner = checkDiagonalWin1();
         }
+        if (winner == Mark.EMPTY) {
+            winner = checkDiagonalWin2();
+        }
 
         if (winner == Mark.X) {
             status = Status.X_WON;
@@ -44,6 +47,14 @@ public class Game {
     private Mark checkDiagonalWin1() {
         if (board[0] == board[4] && board[4] == board[8]) {
             return board[0];
+        } else {
+            return Mark.EMPTY;
+        }
+    }
+
+    private Mark checkDiagonalWin2() {
+        if (board[2] == board[4] && board[4] == board[6]) {
+            return board[2];
         } else {
             return Mark.EMPTY;
         }
