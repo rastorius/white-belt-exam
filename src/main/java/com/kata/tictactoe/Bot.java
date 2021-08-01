@@ -16,6 +16,9 @@ public class Bot {
         if (game.getStatus() == Status.X_WON) {
             System.out.println("PLAYER X WON!");
         }
+        if (game.getStatus() == Status.O_WON) {
+            System.out.println("PLAYER O WON!");
+        }
     }
 
     public void printInit() {

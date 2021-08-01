@@ -31,7 +31,7 @@
 * :D - Print X placement should be printed in the right format
 * :D - Print O placement should be printed in the right format
 * :D - Print X winning should be printed in the right format
-* :| - Print O winning should be printed in the right format
+* :D - Print O winning should be printed in the right format
 * :( - Print draw should be printed in the right format
 
 * :( - 2 seconds between placements
