@@ -11,7 +11,7 @@
 
 # Planned for Pomodoro #2 Remaining
 * :| - Check winner:
-* :| - Win #1 Vertical 1
+* :D - Win #1 Vertical 1
 * :( - Win #2 Vertical 2
 * :( - Win #3 Vertical 3
 * :( - Win #4 Horizontal 1
