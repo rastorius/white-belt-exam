@@ -26,7 +26,7 @@
 * :D - Marked field cannot be marked again
 * :D - Print board
 
-# Planned for Pomodoro #4 Remaining
+# Planned for Pomodoro #4
 * :D - Initial state should be printed in the right format
 * :D - Print X placement should be printed in the right format
 * :D - Print O placement should be printed in the right format
@@ -38,5 +38,5 @@
     * :D - Game is not on when it is an X win
     * :D - Game is not on when it is an O win
 
-* :( - Finish
-* :( - 2 seconds between placements
+* :D - Finish
+* :D - 2 seconds between placements

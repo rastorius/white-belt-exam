@@ -1,5 +1,6 @@
 package com.kata.tictactoe;
 
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.IntSupplier;
 
 public class Bot {
@@ -54,5 +55,27 @@ public class Bot {
 
     public int getMarkPosition() {
         return randomPositionSupplier.getAsInt();
+    }
+
+
+    public static void main(String[] args) {
+        IntSupplier sup = () -> ThreadLocalRandom.current().nextInt(0, 9);
+        Game game = new Game();
+
+        Bot bot = new Bot(sup, game);
+
+        bot.printInit();
+
+        while(bot.isGameOn()) {
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            bot.mark();
+
+        }
+
+        bot.printResult();
     }
 }
