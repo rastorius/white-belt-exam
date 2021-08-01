@@ -5,7 +5,7 @@
 * 2 seconds between mark placements
 
 # Planned for Pomodoro #1 Ongoing
-* :| - First mark can only be X
+* :D - First mark can only be X
 * :( - After X the next mark should be O
 * :( - After O the next mark should be X
 
