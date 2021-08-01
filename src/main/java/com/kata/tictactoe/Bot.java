@@ -13,7 +13,7 @@ public class Bot {
     }
 
     public boolean isGameOn() {
-        return true;
+        return game.getStatus() != Status.DRAW;
     }
 
     public void printResult() {
