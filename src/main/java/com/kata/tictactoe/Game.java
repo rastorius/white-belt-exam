@@ -1,5 +1,7 @@
 package com.kata.tictactoe;
 
+import java.util.Arrays;
+
 public class Game {
     Mark[] board = new Mark[]{Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY};
     private Status status = Status.X_NEXT;
@@ -42,6 +44,13 @@ public class Game {
         if (winner == Mark.O) {
             status = Status.O_WON;
         }
+        if (winner == Mark.EMPTY && isFull()) {
+            status = Status.DRAW;
+        }
+    }
+
+    private boolean isFull() {
+        return Arrays.stream(board).allMatch(m -> m != Mark.EMPTY);
     }
 
     private Mark checkDiagonalWin1() {
