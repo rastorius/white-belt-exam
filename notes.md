@@ -6,7 +6,7 @@
 
 # Planned for Pomodoro #1 Ongoing
 * :D - First mark can only be X
-* :| - After X the next mark should be O
+* :D - After X the next mark should be O
 * :( - After O the next mark should be X
 
 # Planned for Pomodoro #2 Remaining
