@@ -27,11 +27,11 @@
 * :D - Print board
 
 # Planned for Pomodoro #4 Remaining
-* :( - Initial state should be printed first
-* :( - Print X placement
-* :( - Print O placement
-* :( - Print X winning
-* :( - Print O winning
-* :( - Print draw
+* :| - Initial state should be printed in the right format
+* :( - Print X placement should be printed in the right format
+* :( - Print O placement should be printed in the right format
+* :( - Print X winning should be printed in the right format
+* :( - Print O winning should be printed in the right format
+* :( - Print draw should be printed in the right format
 
 * :( - 2 seconds between placements

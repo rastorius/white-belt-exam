@@ -12,6 +12,10 @@ public class Bot {
         this.game = game;
     }
 
+    public void printInit() {
+
+    }
+
     public void mark() {
         int position = randomPositionSupplier.getAsInt();
         while (!game.canMark(position)) {
