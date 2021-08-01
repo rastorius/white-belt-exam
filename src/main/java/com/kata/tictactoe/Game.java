@@ -6,6 +6,10 @@ public class Game {
     Mark[] board = new Mark[]{Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY, Mark.EMPTY};
     private Status status = Status.X_NEXT;
 
+    public void print() {
+
+    }
+
     public void placeMark(int i) {
         if (status == Status.X_NEXT) {
             board[i] = Mark.X;

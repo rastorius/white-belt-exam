@@ -24,7 +24,7 @@
 # Planned for Pomodoro #3 Remaining
 * :( - Mark placement should be random
 * :( - Marked field cannot be marked again
-* :( - Print board
+* :| - Print board
 
 # Planned for Pomodoro #4 Remaining
 * :( - Initial state should be printed first

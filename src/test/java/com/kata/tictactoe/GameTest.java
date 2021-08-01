@@ -3,6 +3,9 @@ package com.kata.tictactoe;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class GameTest {
@@ -252,5 +255,40 @@ class GameTest {
 
         // then
         assertThat(status).isEqualTo(expectedStatus);
+    }
+
+    @Test
+    @DisplayName("Board print test")
+    void givenGame_whenPrint_thenCorrectStringShouldBePrinted() {
+        // given
+        Game game = new Game();
+        game.placeMark(0);
+        game.placeMark(1);
+        game.placeMark(2);
+        game.placeMark(3);
+        game.placeMark(5);
+        game.placeMark(4);
+        game.placeMark(6);
+        game.placeMark(8);
+
+        final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        final PrintStream originalOut = System.out;
+        System.setOut(new PrintStream(outContent));
+
+        String eol = System.lineSeparator();
+        String expectedOutput =
+                "X|O|X" + eol +
+                        "-+-+-" + eol +
+                        "O|O|X" + eol +
+                        "-+-+-" + eol +
+                        "X| |O" + eol;
+
+        // when
+        game.print();
+
+        // then
+        assertThat(outContent.toString()).isEqualTo(expectedOutput);
+
+        System.setOut(originalOut);
     }
 }
