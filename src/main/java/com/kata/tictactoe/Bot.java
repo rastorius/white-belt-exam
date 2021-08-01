@@ -27,6 +27,9 @@ public class Bot {
         if(game.getStatus() == Status.X_NEXT) {
             System.out.println("Player X:");
         }
+        if(game.getStatus() == Status.O_NEXT) {
+            System.out.println("Player O:");
+        }
         game.placeMark(position);
         game.print();
     }
