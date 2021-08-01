@@ -164,4 +164,28 @@ class BotTest {
 
         System.setOut(originalOut);
     }
+
+    @Test
+    @DisplayName("Print O winning should be printed in the right format")
+    void givenOWon_whenPrintResult_thenShouldPrintCorrectString() {
+        // given
+        IntSupplier intSupplier = mock(IntSupplier.class);
+        Game game = mock(Game.class);
+        when(game.getStatus()).thenReturn(Status.X_WON);
+        Bot bot = new Bot(intSupplier, game);
+
+        final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        final PrintStream originalOut = System.out;
+        System.setOut(new PrintStream(outContent));
+
+        String expectedOutput = "PLAYER O WON!" + System.lineSeparator();
+
+        // when
+        bot.printResult();
+
+        // then
+        assertThat(outContent.toString()).isEqualTo(expectedOutput);
+
+        System.setOut(originalOut);
+    }
 }
