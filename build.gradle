@@ -1,0 +1,24 @@
+plugins {
+	id 'java'
+}
+
+group = 'com.kata'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+def junitVersion = '5.7.2'
+def assertjVersion = '3.20.2'
+
+dependencies {
+	testImplementation(platform("org.junit:junit-bom:${junitVersion}"))
+	testImplementation('org.junit.jupiter:junit-jupiter')
+	testImplementation("org.assertj:assertj-core:${assertjVersion}")
+}
+
+test {
+	useJUnitPlatform()
+}
