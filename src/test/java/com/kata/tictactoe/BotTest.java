@@ -171,7 +171,7 @@ class BotTest {
         // given
         IntSupplier intSupplier = mock(IntSupplier.class);
         Game game = mock(Game.class);
-        when(game.getStatus()).thenReturn(Status.X_WON);
+        when(game.getStatus()).thenReturn(Status.O_WON);
         Bot bot = new Bot(intSupplier, game);
 
         final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
