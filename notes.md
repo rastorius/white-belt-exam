@@ -27,7 +27,7 @@
 * :D - Print board
 
 # Planned for Pomodoro #4 Remaining
-* :| - Initial state should be printed in the right format
+* :D - Initial state should be printed in the right format
 * :( - Print X placement should be printed in the right format
 * :( - Print O placement should be printed in the right format
 * :( - Print X winning should be printed in the right format
