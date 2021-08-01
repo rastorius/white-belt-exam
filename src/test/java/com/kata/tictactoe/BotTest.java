@@ -110,4 +110,34 @@ class BotTest {
         System.setOut(originalOut);
     }
 
+    @Test
+    @DisplayName("Print O placement should be printed in the right format")
+    void givenOneMark_whenMarkWithO_thenShouldPrintOPlacement() {
+        // given
+        IntSupplier intSupplier = mock(IntSupplier.class);
+        when(intSupplier.getAsInt()).thenReturn(0).thenReturn(1);
+        Bot bot = new Bot(intSupplier, new Game());
+        bot.mark();
+
+        final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        final PrintStream originalOut = System.out;
+        System.setOut(new PrintStream(outContent));
+
+        String eol = System.lineSeparator();
+        String expectedOutput =
+                "Player O:" + eol +
+                        "X|O| " + eol +
+                        "-+-+-" + eol +
+                        " | | " + eol +
+                        "-+-+-" + eol +
+                        " | | " + eol;
+
+        // when
+        bot.mark();
+
+        // then
+        assertThat(outContent.toString()).isEqualTo(expectedOutput);
+
+        System.setOut(originalOut);
+    }
 }
