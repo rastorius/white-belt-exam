@@ -188,4 +188,28 @@ class BotTest {
 
         System.setOut(originalOut);
     }
+
+    @Test
+    @DisplayName("Print draw should be printed in the right format")
+    void givenDraw_whenPrintResult_thenShouldPrintCorrectString() {
+        // given
+        IntSupplier intSupplier = mock(IntSupplier.class);
+        Game game = mock(Game.class);
+        when(game.getStatus()).thenReturn(Status.DRAW);
+        Bot bot = new Bot(intSupplier, game);
+
+        final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        final PrintStream originalOut = System.out;
+        System.setOut(new PrintStream(outContent));
+
+        String expectedOutput = "GAME ENDS WITH A DRAW!" + System.lineSeparator();
+
+        // when
+        bot.printResult();
+
+        // then
+        assertThat(outContent.toString()).isEqualTo(expectedOutput);
+
+        System.setOut(originalOut);
+    }
 }
