@@ -4,10 +4,13 @@ import java.util.function.IntSupplier;
 
 public class Bot {
 
+    IntSupplier randomPositionSupplier;
+
     public Bot(IntSupplier intSupplier) {
+        this.randomPositionSupplier = intSupplier;
     }
 
     public int getMarkPosition() {
-       return -1;
+       return randomPositionSupplier.getAsInt();
     }
 }
