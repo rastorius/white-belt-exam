@@ -35,6 +35,7 @@
 * :D - Print draw should be printed in the right format
 * :| - Game is on until win or draw
     * :D - Game is not on when it is a draw
-    * :| - Game is not on when it is a win
+    * :D - Game is not on when it is an X win
+    * :| - Game is not on when it is an O win
 
 * :( - 2 seconds between placements

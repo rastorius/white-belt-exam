@@ -230,12 +230,28 @@ class BotTest {
     }
 
     @Test
-    @DisplayName("Game is not on when it is a win")
-    void givenWin_whenIsGameOn_thenShouldReturnFalse() {
+    @DisplayName("Game is not on when it is an X win")
+    void givenXWin_whenIsGameOn_thenShouldReturnFalse() {
         // given
         IntSupplier intSupplier = mock(IntSupplier.class);
         Game game = mock(Game.class);
         when(game.getStatus()).thenReturn(Status.X_WON);
+        Bot bot = new Bot(intSupplier, game);
+
+        // when
+        boolean result = bot.isGameOn();
+
+        // then
+        assertThat(result).isFalse();
+    }
+
+    @Test
+    @DisplayName("Game is not on when it is an O win")
+    void givenOWin_whenIsGameOn_thenShouldReturnFalse() {
+        // given
+        IntSupplier intSupplier = mock(IntSupplier.class);
+        Game game = mock(Game.class);
+        when(game.getStatus()).thenReturn(Status.O_WON);
         Bot bot = new Bot(intSupplier, game);
 
         // when
