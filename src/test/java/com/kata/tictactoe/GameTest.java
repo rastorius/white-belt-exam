@@ -19,4 +19,17 @@ class GameTest {
         // then
         assertThat(status).isEqualTo(expectedStatus);
     }
+
+    @Test
+    @DisplayName("After X the next mark should be O")
+    void givenNewGame_whenPlaceMarkX_thenStatusShouldBeONext() {
+        // given
+        Game game = new Game();
+
+        // when
+        game.placeMark(0);
+
+        // then
+        assertThat(game.getStatus()).isEqualTo(Status.O_NEXT);
+    }
 }
