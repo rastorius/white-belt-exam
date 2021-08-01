@@ -33,9 +33,10 @@
 * :D - Print X winning should be printed in the right format
 * :D - Print O winning should be printed in the right format
 * :D - Print draw should be printed in the right format
-* :| - Game is on until win or draw
+* :D - Game is on until win or draw
     * :D - Game is not on when it is a draw
     * :D - Game is not on when it is an X win
-    * :| - Game is not on when it is an O win
+    * :D - Game is not on when it is an O win
 
+* :( - Finish
 * :( - 2 seconds between placements

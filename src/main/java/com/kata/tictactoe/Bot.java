@@ -14,7 +14,8 @@ public class Bot {
 
     public boolean isGameOn() {
         return game.getStatus() != Status.DRAW
-                && game.getStatus() != Status.X_WON;
+                && game.getStatus() != Status.X_WON
+                && game.getStatus() != Status.O_WON;
     }
 
     public void printResult() {
