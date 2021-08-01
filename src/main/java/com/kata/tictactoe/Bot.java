@@ -13,7 +13,10 @@ public class Bot {
     }
 
     public void printInit() {
-
+        System.out.println("Game Board Creation...");
+        game.print();
+        System.out.println("Board Created.");
+        System.out.println("The game will start with player X");
     }
 
     public void mark() {
