@@ -16,7 +16,7 @@
 * :D - Win #3 Vertical 3
 * :D - Win #4 Horizontal 1
 * :D - Win #5 Horizontal 2
-* :( - Win #6 Horizontal 3
+* :| - Win #6 Horizontal 3
 * :( - Win #7 Diagonal 1
 * :( - Win #8 Diagonal 2
 * :( - Draw - If the board is full and there is no winner then it is a draw
