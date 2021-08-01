@@ -14,6 +14,10 @@ public class Game {
         System.out.println(board[6] + "|" + board[7] + "|" + board[8]);
     }
 
+    public boolean canMark(int position) {
+        return board[position] == Mark.EMPTY;
+    }
+
     public void placeMark(int i) {
         if (status == Status.X_NEXT) {
             board[i] = Mark.X;

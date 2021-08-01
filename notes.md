@@ -9,21 +9,21 @@
 * :D - After X the next mark should be O
 * :D - After O the next mark should be X
 
-# Planned for Pomodoro #2 Ongoing
-* :| - Check winner:
-* :D - Win #1 Vertical 1
-* :D - Win #2 Vertical 2
-* :D - Win #3 Vertical 3
-* :D - Win #4 Horizontal 1
-* :D - Win #5 Horizontal 2
-* :D - Win #6 Horizontal 3
-* :D - Win #7 Diagonal 1
-* :D - Win #8 Diagonal 2
-* :D - Draw - If the board is full and there is no winner then it is a draw
+# Planned for Pomodoro #2
+* :D - Check winner:
+    * :D - Win #1 Vertical 1
+    * :D - Win #2 Vertical 2
+    * :D - Win #3 Vertical 3
+    * :D - Win #4 Horizontal 1
+    * :D - Win #5 Horizontal 2
+    * :D - Win #6 Horizontal 3
+    * :D - Win #7 Diagonal 1
+    * :D - Win #8 Diagonal 2
+    * :D - Draw - If the board is full and there is no winner then it is a draw
 
-# Planned for Pomodoro #3 Remaining
+# Planned for Pomodoro #3 Ongoing
 * :D - Mark placement should be random
-* :| - Marked field cannot be marked again
+* :D - Marked field cannot be marked again
 * :D - Print board
 
 # Planned for Pomodoro #4 Remaining
