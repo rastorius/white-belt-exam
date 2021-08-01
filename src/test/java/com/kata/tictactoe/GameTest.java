@@ -77,9 +77,9 @@ class GameTest {
         game.placeMark(3);
         game.placeMark(0);
         game.placeMark(8);
-        game.placeMark(1);
+        game.placeMark(3);
         game.placeMark(7);
-        game.placeMark(2);
+        game.placeMark(6);
 
         Status expectedStatus = Status.O_WON;
 
