@@ -212,4 +212,20 @@ class BotTest {
 
         System.setOut(originalOut);
     }
+
+    @Test
+    @DisplayName("Game is not on when it is a draw")
+    void givenDraw_whenIsGameOn_thenShouldReturnFalse() {
+        // given
+        IntSupplier intSupplier = mock(IntSupplier.class);
+        Game game = mock(Game.class);
+        when(game.getStatus()).thenReturn(Status.DRAW);
+        Bot bot = new Bot(intSupplier, game);
+
+        // when
+        boolean result = bot.isGameOn();
+
+        // then
+        assertThat(result).isFalse();
+    }
 }

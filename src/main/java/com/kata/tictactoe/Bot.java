@@ -12,6 +12,10 @@ public class Bot {
         this.game = game;
     }
 
+    public boolean isGameOn() {
+        return true;
+    }
+
     public void printResult() {
         if (game.getStatus() == Status.X_WON) {
             System.out.println("PLAYER X WON!");
