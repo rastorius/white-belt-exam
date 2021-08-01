@@ -109,4 +109,24 @@ class GameTest {
         // then
         assertThat(status).isEqualTo(expectedStatus);
     }
+
+    @Test
+    @DisplayName("Win #3 Vertical 3")
+    void givenWinningVertical3XMark_whenGetStatus_thenStatusShouldBeXWon() {
+        // given
+        Game game = new Game();
+        game.placeMark(2);
+        game.placeMark(3);
+        game.placeMark(5);
+        game.placeMark(6);
+        game.placeMark(8);
+
+        Status expectedStatus = Status.X_WON;
+
+        // when
+        Status status = game.getStatus();
+
+        // then
+        assertThat(status).isEqualTo(expectedStatus);
+    }
 }
