@@ -28,7 +28,7 @@
 
 # Planned for Pomodoro #4 Remaining
 * :D - Initial state should be printed in the right format
-* :( - Print X placement should be printed in the right format
+* :| - Print X placement should be printed in the right format
 * :( - Print O placement should be printed in the right format
 * :( - Print X winning should be printed in the right format
 * :( - Print O winning should be printed in the right format
