@@ -24,7 +24,11 @@ public class Bot {
         while (!game.canMark(position)) {
             position = randomPositionSupplier.getAsInt();
         }
+        if(game.getStatus() == Status.X_NEXT) {
+            System.out.println("Player X:");
+        }
         game.placeMark(position);
+        game.print();
     }
 
     public int getMarkPosition() {

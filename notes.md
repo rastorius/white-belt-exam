@@ -21,7 +21,7 @@
     * :D - Win #8 Diagonal 2
     * :D - Draw - If the board is full and there is no winner then it is a draw
 
-# Planned for Pomodoro #3 Ongoing
+# Planned for Pomodoro #3
 * :D - Mark placement should be random
 * :D - Marked field cannot be marked again
 * :D - Print board
